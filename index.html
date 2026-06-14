@@ -1,99 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Northridge Community School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <img src="ncs-logo.jpeg" alt="Northridge Community School logo" class="logo" />
-    <nav>
-      <a href="#about">About</a>
-      <a href="#admissions">Admissions</a>
+    <a class="brand" href="#top" aria-label="Northridge Community School home">
+      <img src="logo.jpeg" alt="Northridge Community School logo" />
+      <span>Northridge<br><small>Community School</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#about">About NCS</a>
+      <a href="#admissions">Admissions Process</a>
       <a href="#staff">Staff</a>
       <a href="#donate">Donate</a>
-      <a href="#apply" class="nav-button">Apply Now</a>
     </nav>
+    <a class="btn btn-top" href="#apply">Apply Now <span>→</span></a>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero" id="apply">
-      <div class="hero-content">
-        <p class="eyebrow">Northridge Community School</p>
-        <h1 class="ombre-wave">Christ Centered. Joyful Learning. Family Focused.</h1>
-        <p class="hero-copy">A hybrid Christian school community partnering with families through campus learning, home learning, and character formation.</p>
-        <a href="#admissions" class="button">Apply Now</a>
+      <div class="leaf-mark" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <h1 class="hero-title">Christ Centered.<br>Joyful Learning.<br>Family Focused.</h1>
+        <a class="btn" href="mailto:admissions@northridgecommunityschool.org?subject=Apply%20Now">Apply Now <span>→</span></a>
+      </div>
+      <div class="hero-image" aria-label="School building"></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">About NCS</p>
+        <h2>Building Hearts.<br>Preparing Minds.</h2>
+        <p>Northridge Community School partners with families to provide a Christ-centered education that nurtures character, inspires a love of learning, and prepares students for a life of purpose.</p>
+        <a class="btn" href="mailto:admissions@northridgecommunityschool.org?subject=Apply%20Now">Apply Now <span>→</span></a>
+      </div>
+      <div class="video-card" aria-label="Reserved video area">
+        <button aria-label="Play school video">▶</button>
       </div>
     </section>
 
-    <section class="schedule-section">
-      <h2>Weekly Schedule</h2>
-      <p>Students learn on campus three days a week and continue learning at home two days a week.</p>
-      <div class="schedule-card" aria-label="Weekly school schedule">
-        <div class="day home"><span>Monday</span><strong>Home</strong></div>
-        <div class="day campus"><span>Tuesday</span><strong>Campus</strong></div>
-        <div class="day campus"><span>Wednesday</span><strong>Campus</strong></div>
-        <div class="day home"><span>Thursday</span><strong>Home</strong></div>
-        <div class="day campus"><span>Friday</span><strong>Campus</strong></div>
-      </div>
-    </section>
-
-    <section id="about" class="content-section split">
-      <div>
-        <h2>About NCS</h2>
-        <p>Northridge Community School exists to provide Christ-centered education in a joyful, family-focused environment. We value strong academics, godly character, and a meaningful partnership between school and home.</p>
-        <a href="#admissions" class="button secondary">Apply Now</a>
-      </div>
-      <img src="ncs-logo.jpeg" alt="NCS crest" class="crest-small" />
-    </section>
-
-    <section id="admissions" class="content-section admissions">
-      <h2>Admissions Process</h2>
+    <section class="section admissions" id="admissions">
+      <p class="eyebrow">Admissions Process</p>
+      <h2>Simple Steps. Meaningful Journey.</h2>
       <div class="steps">
-        <article>
-          <span>1</span>
-          <h3>Application</h3>
-          <p>Submit your family application to begin the admissions process.</p>
+        <article class="step">
+          <div class="icon">✎</div>
+          <span class="number">1</span>
+          <h3>Inquiry</h3>
+          <p>Tell us about your family and your student.</p>
         </article>
-        <article>
-          <span>2</span>
-          <h3>Pastoral Reference</h3>
-          <p>Provide a pastoral reference as part of our community partnership process.</p>
+        <article class="step">
+          <div class="icon">☷</div>
+          <span class="number">2</span>
+          <h3>Tour &amp; Visit</h3>
+          <p>Schedule a visit and see NCS in action.</p>
         </article>
-        <article>
-          <span>3</span>
-          <h3>Interview</h3>
-          <p>Meet with the NCS team to discuss fit, expectations, and next steps.</p>
+        <article class="step">
+          <div class="icon">☑</div>
+          <span class="number">3</span>
+          <h3>Apply</h3>
+          <p>Complete the application and required documents.</p>
+        </article>
+        <article class="step">
+          <div class="icon">⌂</div>
+          <span class="number">4</span>
+          <h3>Enroll</h3>
+          <p>Join our NCS family and start your journey!</p>
         </article>
       </div>
-      <a href="mailto:admissions@northridgecommunityschool.org" class="button">Apply Now</a>
+      <a class="btn" href="mailto:admissions@northridgecommunityschool.org?subject=Apply%20Now">Apply Now <span>→</span></a>
     </section>
 
-    <section id="staff" class="content-section">
-      <h2>Meet the Staff</h2>
-      <p>Our staff is committed to nurturing students academically, spiritually, and relationally in a warm Christian learning environment.</p>
+    <section class="section staff" id="staff">
+      <p class="eyebrow">Our Staff</p>
+      <h2>Caring Educators.</h2>
       <div class="staff-grid">
-        <div class="staff-card">Administrator</div>
-        <div class="staff-card">Teachers</div>
-        <div class="staff-card">Support Team</div>
+        <article class="staff-card"><div class="photo"><span></span></div><h3>Staff Name</h3><p>Position or Title</p></article>
+        <article class="staff-card"><div class="photo"><span></span></div><h3>Staff Name</h3><p>Position or Title</p></article>
+        <article class="staff-card"><div class="photo"><span></span></div><h3>Staff Name</h3><p>Position or Title</p></article>
+        <article class="staff-card"><div class="photo"><span></span></div><h3>Staff Name</h3><p>Position or Title</p></article>
       </div>
-      <a href="#admissions" class="button secondary">Apply Now</a>
+      <a class="btn btn-outline" href="#staff">Meet Our Staff <span>→</span></a>
     </section>
 
-    <section id="donate" class="content-section donate">
-      <h2>Donate to NCS</h2>
-      <p>Your generosity helps support Christ-centered education, school resources, and families in our community.</p>
-      <div class="button-row">
-        <a href="mailto:office@northridgecommunityschool.org" class="button">Donate to NCS</a>
-        <a href="#admissions" class="button secondary">Apply Now</a>
+    <section class="donate-band" id="donate">
+      <div class="hand-heart" aria-hidden="true">♡</div>
+      <div>
+        <p class="eyebrow light">Donate</p>
+        <h2>Invest in Eternal Impact.</h2>
+        <p>Your generosity helps us provide an exceptional, Christ-centered education to students and families.</p>
       </div>
+      <a class="btn btn-light" href="mailto:office@northridgecommunityschool.org?subject=Donate%20Today">Donate Today <span>→</span></a>
     </section>
   </main>
 
-  <footer>
-    <p>© Northridge Community School · Where Godly Character meets Great Academics</p>
+  <footer class="site-footer">
+    <a class="footer-brand" href="#top"><img src="logo.jpeg" alt="Northridge Community School logo"><span>Northridge<br><small>Community School</small></span></a>
+    <p>Where Godly Character<br>meets Great Academics</p>
+    <div class="socials"><a href="#">f</a><a href="#">◎</a><a href="mailto:office@northridgecommunityschool.org">✉</a></div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
